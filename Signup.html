@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2> Sign UP ASIK  </h2>
+    <input type="text" placeholder="Username" id="Username">
+    <input type="text" placeholder="Email" id="Email">
+    <input type="text" placeholder="Password" id="password">
+    <input type="text" placeholder="Confirm Password" id="Confirm Password">
+    <button onclick="Signup()">Sign Up</button>
+  </div>
+  
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var email = document.getElementById('Email').value;
+      var password = document.getElementById('password').value;
+      var Confirm password = document.getElementById('Confirm password').value;
+      // Add your login logic here
+      console.log('Username: ' + username);
+      console.log('Password: ' + password);
+    }
+  </script>
+</body>
+</html>
