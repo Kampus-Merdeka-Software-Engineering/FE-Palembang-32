@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login page</title>
-  <style>
-    
-  </style>
+  <!-- title -->
+  <title>Sign Up</title>
+  <!-- icon -->
+  <link rel="shortcut icon" href="images/logo2.png">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/signup.css">
+  <!-- Import Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="signup-container">
-    <h2> Sign UP ASIK  </h2>
-    <input type="text" placeholder="Username" id="Username">
-    <input type="text" placeholder="Email" id="Email">
-    <input type="text" placeholder="Password" id="password">
-    <input type="text" placeholder="Confirm Password" id="Confirm Password">
-    <button onclick="Signup()">Sign Up</button>
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="username" id="username">
+    <input type="text" placeholder="email" id="email">
+    <input type="password" placeholder="password" id="password">
+    <input type="password" placeholder="confirm password" id="confirmPassword">
+    <a href="login.html"><button onclick="signup()">Sign Up</button></a>
   </div>
   
   <script>
-    function login() {
-      var username = document.getElementById('username').value;
-      var email = document.getElementById('Email').value;
-      var password = document.getElementById('password').value;
-      var Confirm password = document.getElementById('Confirm password').value;
-      // Add your login logic here
-      console.log('Username: ' + username);
-      console.log('Password: ' + password);
-    }
+    
   </script>
 </body>
 </html>
