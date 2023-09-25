@@ -411,3 +411,10 @@ section:nth-child(even){
         font-size: 50%;
     }
 }
+
+.header .navbar .signup {
+    background: #8a2be2;
+    color:#ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
