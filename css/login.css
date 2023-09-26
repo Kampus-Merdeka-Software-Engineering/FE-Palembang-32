@@ -35,25 +35,36 @@ body {
   }
 
   .login-container input {
-    width: 100%;
-    padding: 10px;
-    padding-right: .01rem;
-    margin-bottom: 20px;
-    border: 1px solid var(--purple);
-    border-radius: 3px;
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
   }
 
   .login-container button {
-    width: 100%;
-    padding: 10px;
-    border: var(--border);
-    color: var(--purple);
-    background-color: var(--white);
-    cursor: pointer;
-    border-radius: 3px;
+  border: var(--border);
+  color: var(--white);
+  background-color: var(--purple);
+	font-size: 11pt;
+	width: 100%;
+	border-radius: 3px;
+	padding: 10px 20px;
+  margin-top: 5px;    
+  margin-bottom: 5px; 
   }
 
-  .login-container button:hover {
-    background-color: var(--purple);
-    color: var(--white);
+  .login-container button:hover, .link button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  }
+
+  .login-container .link button{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+	  padding: 10px 20px;
   }
