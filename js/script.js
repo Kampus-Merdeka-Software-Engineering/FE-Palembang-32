@@ -31,3 +31,8 @@ function login() {
     console.log('Username: ' + username);
     console.log('Password: ' + password);
 }
+function Forgot(){
+    document.getElementById('forgotPasswordButton').addEventListener('click', function() {
+        window.location.href = 'signup.html';
+    });
+}
