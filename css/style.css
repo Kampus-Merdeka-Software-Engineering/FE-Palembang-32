@@ -110,7 +110,7 @@ section:nth-child(even){
     color: var(--black);
 }
 .header .navbar .signup {
-    background: #8a2be2;
+    background: var(--purple);
     color:#ffffff;
     border-radius: 1rem;
     padding: 1rem;
