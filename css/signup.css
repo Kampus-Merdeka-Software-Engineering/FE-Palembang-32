@@ -35,23 +35,24 @@ body {
     }
 
     .signup-container input {
+      box-sizing : border-box;
       width: 100%;
       padding: 10px;
-      padding-right: .01rem;
+      font-size: 11pt;
       margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
      
     }
 
     .signup-container button {
-      width: 100%;
-      padding: 10px;
       border: var(--border);
-      color: var(--purple);
-      background-color: var(--white);
-      cursor: pointer;
+      color: var(--white);
+      background-color: var(--purple);
+      font-size: 11pt;
+      width: 100%;
       border-radius: 3px;
+      padding: 10px 20px;
+      margin-top: 5px;    
+      margin-bottom: 5px;
     }
 
     .signup-container button:hover {
