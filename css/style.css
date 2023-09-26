@@ -109,6 +109,12 @@ section:nth-child(even){
 .header .navbar a:hover{
     color: var(--black);
 }
+.header .navbar .signup {
+    background: #8a2be2;
+    color:#ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
 #menu-btn{
     font-size: 2.5rem;
     border-radius: .5rem;
@@ -410,11 +416,4 @@ section:nth-child(even){
     html{
         font-size: 50%;
     }
-}
-
-.header .navbar .signup {
-    background: #8a2be2;
-    color:#ffffff;
-    border-radius: 1rem;
-    padding: 1rem;
 }
