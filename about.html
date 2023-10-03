@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>ASIK</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/logo2.png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Import Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section start -->
+    <nav class="bg-white shadow-ctm p-6 fixed">
+      <div class="container-nav mx-auto flex justify-between items-center">
+        <div class="text-purple-500 text-2xl font-semibold">
+          <a href="#" class="logo-nav">ASIK</a>
+        </div>
+        <div class="flex items-center space-x-6">
+          <ul class="flex space-x-6 text-nav">
+            <li class="hidden md:block">
+              <a href="index.html" class="text-purple-500 hover:text-gray-400"
+                >Home</a
+              >
+            </li>
+
+            <li class="hidden md:block">
+              <a href="index.html" class="text-purple-500 hover:text-gray-400"
+                >Services</a
+              >
+            </li>
+            <li class="hidden md:block">
+              <a href="index.html" class="text-purple-500 hover:text-gray-400"
+                >Doctors</a
+              >
+            </li>
+            <li class="hidden md:block">
+              <a href="index.html" class="text-purple-500 hover:text-gray-400"
+                >Book Appointment</a
+              >
+            </li>
+            <li class="hidden md:block">
+              <a href="about.html" class="text-purple-500 hover:text-gray-400"
+                >About Us</a
+              >
+            </li>
+            <li class="hidden md:block">
+              <a
+                href="signup.html"
+                class="signup text-purple-500 hover:text-gray-400"
+                id="signup-link"
+                >Sign-Up</a
+              >
+            </li>
+            <li class="hidden md:block">
+              <a
+                href="login.html"
+                class="login text-purple-500 hover:text-gray-400"
+                id="login-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center space-x-4 avatar">
+            <img
+              src="images/profil.png"
+              alt="Avatar"
+              class="w-16 h-16 rounded-full avatar-image"
+            />
+          </div>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- Dropdown Menu List -->
+        <div class="dropdown-menu text-nav">
+          <!-- <a
+            href="akun.html"
+            class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            ><i class="fa fa-user" aria-hidden="true"></i> Tentang Akun</a
+          >
+          <a
+            href="setting.html"
+            class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            ><i class="fa fa-cog" aria-hidden="true"></i> Pengaturan</a
+          > -->
+          <a
+            href="login.html"
+            class="block px-4 py-2 text-red-600 hover:bg-red-200"
+            ><i class="fa fa-sign-out-alt" aria-hidden="true"></i> Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Dropdown Menu -->
+    <div class="text-nav menu-list">
+      <ul class="menu-drop">
+        <li>
+          <a href="index.html" class="text-purple-500 hover:text-gray-400"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a href="index.html" class="text-purple-500 hover:text-gray-400"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="index.html" class="text-purple-500 hover:text-gray-400"
+            >Doctors</a
+          >
+        </li>
+        <li>
+          <a href="index.html" class="text-purple-500 hover:text-gray-400"
+            >Book Appointment</a
+          >
+        </li>
+        <li>
+          <a href="about.html" class="text-purple-500 hover:text-gray-400"
+            >About Us</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- header section end -->
+
+
+    <section class="about-web">
+      <img src="images/logo2.png" class="logo-about" alt="" />
+      <div class="title">
+        <h2>About Our Website</h2>
+        <p>
+          One of the main goals of the SDGs is to reduce the Maternal Mortality Rate (MMR) and Infant Mortality Rate (IMR). The government has an important role in achieving this goal through innovation, funding and government policies. Currently, MMR is still high, at around 305 per 100,000 live births, far from the target of 183 per 100,000 live births in 2024. The role of the family is also crucial in reducing MMR and IMR, with a family approach that involves instruments, communication and community involvement. The Ministry of Health strives to provide access to quality health services, including services for pregnant women, birth assistance, post-natal care, and family planning services.
+          Therefore, we provide online parenting services and consultations by experts to help mothers prevent children's growth and development disorders.</p>
+      </div>
+    </section>
+
+    <section class="keunggulan-web">
+      <center><h2>Our Advantages</h2></center>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-user-md"></i>
+          <p>Direct service with expert doctors</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-baby-carriage"></i>
+          <p>
+            Mother and child parenting knowledge from experts directly
+          </p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-ambulance"></i>
+          <p>24/7 Outpatient Services</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-comments"></i>
+          <p>Special consultation services with doctors</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimoni">
+      <center><h2>Our Team</h2></center>
+      <div class="box-container">
+        <!-- <div class="swiper-container">
+          <div class="swiper-wrapper"> -->
+            <!-- Isi Carousel -->
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/Rizki.JPG" alt="" />
+              </center>
+                <p>
+                  Rizki Fajar Septiana
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/nadia.jpeg" alt="" />
+              </center>
+                <p>
+                  Nadia Maulidina Gautama
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/galih.jpeg" alt="" />
+              </center>
+                <p>
+                  Galih Kusuma Widodo
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/hanun.jpg" alt="" />
+              </center>
+                <p>
+                  Hanuun Maharani
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/kevin.jpg" alt="" />
+              </center>
+                <p>
+                  Kevin Teguh Nugroho
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+              <center>
+                <img src="images/wahyu.jpg" alt="" />
+              </center>
+                <p>
+                  Wahyu Micho Indrawan
+                </p>
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- Tombol Navigasi Carousel -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <section class="footer" id="footer">
+      <div class="box-container">
+          <div class="box">
+              <h3>Contact</h3>
+              <a href="#"><i class="fas fa-phone-alt"></i> 021-12345</a>
+              <a href="#"><i class="fas fa-envelope"></i> asik@gmail.com</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Indonesia</a>
+          </div>
+      </div>
+      <div class="credit">created by <span>Group32 - Team P - Section Palembang</span></div>
+  </section>
+    <!-- footer section end -->
+
+    <!-- js -->
+    <script src="js/carousel.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const avatar = document.querySelector(".avatar");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+
+        avatar.addEventListener("click", function (e) {
+          e.stopPropagation(); // Mencegah penutupan dropdown saat diklik pada avatar
+          dropdownMenu.style.display = "block";
+        });
+
+        document.addEventListener("click", function () {
+          dropdownMenu.style.display = "none";
+        });
+      });
+    </script>
+    <script>
+      function showAlert() {
+        var alert = document.getElementById("successAlert");
+        alert.classList.add("show-alert");
+        alert.style.display = "block";
+
+        setTimeout(function () {
+          alert.classList.remove("show-alert");
+        }, 3000);
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menuList = document.querySelector(".menu-list");
+
+        menuToggle.addEventListener("click", function (e) {
+          if (menuList.style.display === "block") {
+            menuList.style.display = "none";
+          } else {
+            e.stopPropagation();
+            menuList.style.display = "block";
+          }
+        });
+
+        document.addEventListener("click", function () {
+          menuList.style.display = "none";
+        });
+      });
+    </script>
+
+    <script src="js/navbar.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper;
+
+      function initSwiper() {
+        swiper = new Swiper(".swiper-container", {
+          slidesPerView: getSlidesPerView(),
+          spaceBetween: 20,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }
+
+      function getSlidesPerView() {
+        if (window.innerWidth >= 1024) {
+          return 3;
+        } else if (window.innerWidth >= 768) {
+          return 2;
+        } else {
+          return 1;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", initSwiper);
+      window.addEventListener("resize", function () {
+        swiper.destroy();
+        initSwiper();
+      });
+    </script>
+  </body>
+</html>
