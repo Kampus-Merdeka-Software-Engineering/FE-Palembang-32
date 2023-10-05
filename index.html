@@ -367,6 +367,27 @@
         </form>
       </div>
     </section>
+    <script>
+      const handleSubmitForm = (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        fetch("api/book", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            nama: formData.get("nama"),
+            number: formData.get("number"),
+            namaDokter: formData.get("namaDokter"),
+            dateBook: formData.get("dateBook"),
+          }),
+        });
+      };
+
+      document.getElementById("book-form").onsubmit = handleSubmitForm;
+    </script>
     <!-- booking section end -->
     <!-- blogs section start -->
     <section class="blogs" id="blogs">
