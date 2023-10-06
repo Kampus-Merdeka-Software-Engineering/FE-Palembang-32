@@ -1078,8 +1078,8 @@ input[type="file"] {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: orangered;
-  color: #ffffff;
+  background-color: var(--blueviolet);
+  color: var(--white);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1148,7 +1148,7 @@ input[type="file"] {
 
 /* Efek Hover */
 .btn-doctor:hover {
-  background-color: orange;
+  background-color: var(--purple);
   color: #ffffff;
 }
 
