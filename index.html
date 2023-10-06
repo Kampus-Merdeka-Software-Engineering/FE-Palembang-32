@@ -325,11 +325,11 @@
         <div class="image">
           <img src="images/doctor2.png" alt="" />
         </div>
-        <form action="">
+        <form id="book-form">
           <h3>Book Appointment</h3>
-          <input type="text" placeholder="Name" class="box" />
-          <input type="number" placeholder="Number Phone" class="box" />
-          <select name="doctor-name" id="doctor-name" class="box">
+          <input id="nama" name="nama" type="text" placeholder="Name" class="box" />
+          <input id="number" name="number" type="number" placeholder="Number Phone" class="box" />
+          <select id="namaDokter" name="namaDokter" name="doctor-name" id="doctor-name" class="box">
             <option value="select">==SELECT DOCTOR==</option>
             <option value="dr. Yulianto Basuki, Sp.OG">
               dr. Yulianto Basuki, Sp.OG
@@ -350,13 +350,14 @@
               dr. Yoke Kinanthi Putri, Sp.A.
             </option>
           </select>
-          <input type="date" class="box" />
-          <textarea
-            placeholder="Question"
-            name="question"
+          <input id="dateBook" name="dateBook" type="date" class="box" />
+           <input
             id="question"
+            name="question"
+            type="text"
+            placeholder="Question"
             class="ckeditor box"
-          ></textarea>
+          />
           <input
             type="submit"
             value="Book Now"
@@ -368,26 +369,27 @@
       </div>
     </section>
     <script>
-      const handleSubmitForm = (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-
-        fetch("api/book", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            nama: formData.get("nama"),
-            number: formData.get("number"),
-            namaDokter: formData.get("namaDokter"),
-            dateBook: formData.get("dateBook"),
-          }),
-        });
-      };
-
-      document.getElementById("book-form").onsubmit = handleSubmitForm;
-    </script>
+        const handleSubmitForm = (event) => {
+          event.preventDefault();
+          const formData = new FormData(event.target);
+  
+          fetch("https://be-palembang-32-production.up.railway.app/api/book", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              nama: formData.get("nama"),
+              number: formData.get("number"),
+              namaDokter: formData.get("namaDokter"),
+              dateBook: formData.get("dateBook"),
+              question: formData.get("question"),
+            }),
+          });
+        };
+  
+        document.getElementById("book-form").onsubmit = handleSubmitForm;
+    </script>
     <!-- booking section end -->
     <!-- blogs section start -->
     <section class="blogs" id="blogs">
