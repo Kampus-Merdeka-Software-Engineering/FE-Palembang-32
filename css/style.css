@@ -953,6 +953,10 @@ input[type="file"] {
   flex-grow: 1;
   margin-left: 3rem;
 }
+.spacer1 {
+  flex-grow: 1;
+  margin-left: .5rem;
+}
 
 .doctor-profile h2 {
   font-weight: bold;
