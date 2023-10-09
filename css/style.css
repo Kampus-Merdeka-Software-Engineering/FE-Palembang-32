@@ -300,10 +300,13 @@ table{
 th{
   border: var(--border);
   padding: .5rem;
+  font-size: 18px;
+  color: var(--blueviolet);
 }
 td{
   border: var(--border);
   padding: .5rem;
+  font-size: 15px;
 }
 tr{
   border: var(--border);
