@@ -257,7 +257,7 @@
     <!-- doctor section start -->
     <section class="doctors" id="doctors">
       <h1 class="heading">our <span>doctors</span></h1>
-      <div class="box-container">
+      <!-- <div class="box-container">
         <div class="box">
           <center>
             <img src="images/dr. Yoke Kinanthi Putri, Sp.A, IBCLC.jpg.jpg" alt="">
@@ -312,37 +312,36 @@
             <span>Obstetricians</span>
           </a>
         </div>
-      </div>
-      <!-- <script>
-        const ambilData = async() => {
-          const response = await fetch("https://be-palembang-32-production.up.railway.app/api/dokter");
-          const dokter = await response.json();
-          console.log(dokter);
-    
-          const h = "text/html"
-          let parser = new DOMParser();
-    
-            dokter.forEach((dokter) => {
-              let dokterStr = `
-              <div class="box-container">
-                <div class="box">
-                  <center>
-                    <img src="images/dr. Yoke Kinanthi Putri, Sp.A, IBCLC.jpg.jpg" alt="">
-                  </center>    
-                  <h3>${dokter.nama}</h3>
-                  <a href="doctor.html">
-                      <span>${dokter.bidang}</span>
-                  </a>
-                </div> 
-              </div>
-              `;
-              let el = parser.parseFromString(dokterStr, h);
-              let root = document.querySelector("div.box-container");
-              root.appendChild(el.body.firstChild);
-            });
-        };
-        ambilData();
-      </script> -->
+      </div> -->
+      <table class="table table-bordered">
+        <tbody id="data"></tbody>
+      </table>
+
+      <script>
+        getData();
+        async function getData() {
+          const response = await fetch('https://be-palembang-32-production.up.railway.app/api/dokter')
+          const data = await response.json();
+          console.log(data);
+          length = data.data.length;
+          console.log(length);
+          var dokter = "";
+          var tab = "";
+          // dokter += "<td>" + data.message + "</td>";
+          dokter += "<tr>";
+          // dokter += "<th>ID</th>";
+          dokter += "<th>NAMA</th>";
+          dokter += "<th>BIDANG</th>";
+          dokter += "</tr>";
+          for (i = 0; i < length; i++) {
+            dokter += "<tr>";
+            // dokter += "<td>" + data.data[i].id + "</td>";
+            dokter += "<td>" + data.data[i].nama + "</td>";
+            dokter += "<td>" + data.data[i].bidang + "</td>";
+          }
+          document.getElementById("data").innerHTML = dokter;
+        }
+      </script>
     </section>
     <!-- doctor section end -->
 

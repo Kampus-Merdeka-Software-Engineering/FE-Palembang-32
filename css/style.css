@@ -292,6 +292,19 @@ section:nth-child(even) {
   color: #fff;
   box-shadow: var(--box-shadow);
 }
+table{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+td{
+  border: var(--border);
+  padding: .5rem;
+}
+tr{
+  border: var(--border);
+  padding: .5rem;
+}
 .testimoni .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
