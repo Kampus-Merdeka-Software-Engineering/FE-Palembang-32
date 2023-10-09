@@ -326,12 +326,14 @@
           var tab = "";
           dokter += "<tr>";
           // dokter += "<th>ID</th>";
+          dokter += "<th></th>";
           dokter += "<th>NAMA</th>";
           dokter += "<th>BIDANG</th>";
           dokter += "</tr>";
           for (i = 0; i < length; i++) {
             dokter += "<tr>";
             // dokter += "<td>" + data.data[i].id + "</td>";
+            dokter += "<td><img src=" + data.data[i].gambar + "></td>";
             dokter += "<td>" + data.data[i].nama + "</td>";
             dokter += "<td>" + data.data[i].bidang + "</td>";
           }
