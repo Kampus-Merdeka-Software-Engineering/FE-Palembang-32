@@ -324,7 +324,6 @@
           console.log(length);
           var dokter = "";
           var tab = "";
-          // dokter += "<td>" + data.message + "</td>";
           dokter += "<tr>";
           // dokter += "<th>ID</th>";
           dokter += "<th>NAMA</th>";
@@ -336,6 +335,8 @@
             dokter += "<td>" + data.data[i].nama + "</td>";
             dokter += "<td>" + data.data[i].bidang + "</td>";
           }
+          // dokter += "<br>";
+          // dokter += "<tr>" + data.message + "</tr>";
           document.getElementById("data").innerHTML = dokter;
         }
       </script>

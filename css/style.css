@@ -297,6 +297,10 @@ table{
   margin-right: auto;
   text-align: center;
 }
+th{
+  border: var(--border);
+  padding: .5rem;
+}
 td{
   border: var(--border);
   padding: .5rem;
